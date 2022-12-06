@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <h3>E-mail:</h3>
+    <input type="email" placeholder="enter you email">
+    <h3>Password:</h3>
+    <input type="password" placeholder="enter you password" id="password">
+    <i class="fas fa-eye-slash" onclick="togglepassword()" id="password_eye"></i>
+    <script>
+        // document.write("Name:Tahmid Newaz </br>")
+        // document.write("class:11 </br>")
+        // document.write("SSC Roll:103221 </br>")
+        // document.write("SSC Registration No:1914559083 </br>")
+        // document.write("Number:01894029869 </br>")
+        // var num = window.prompt('Enter a number->');
+        // if(num % 2 == 0){
+        //     document.write("Even Number </br>");
+        // }
+        // else if(num % 2 == 1){
+        //     document.write('Odd Number </br>');
+        // }
+        // else{
+        //     document.write('Dont be so smart </br>');
+        // }
+        // var age = window.prompt("Enter your age->")
+        // if(age >= 18 && age < 61){
+        //     document.write('you can marry')
+        // }
+        // else if(age > 10 && age < 18){
+        //     document.write('you cannot marry')
+        // }
+        // else{
+        //     document.write('you are out of this condition')
+        // }
+        function togglepassword(){
+            if(document.getElementById('password').type == 'password'){
+                document.getElementById('password').type = 'text';
+                document.getElementById('password_eye').classList.add('fa-eye');
+                document.getElementById('password_eye').classList.remove('fa-eye-slash');
+            }
+            else{
+                document.getElementById('password').type = 'password';
+                document.getElementById('password_eye').classList.remove('fa-eye');
+                document.getElementById('password_eye').classList.add('fa-eye-slash');
+            }
+        }
+    </script>
+</body>
+</html>
